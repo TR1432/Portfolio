@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import logo from "./Asset 1.svg";
 import Navbar from "./navbar";
 import HomePage from "./Home";
-import BlogPage from "./";
+import BlogPage from ".";
 import ProjectsPage from "./Projects";
 import ResumePage from "./Resume";
 import ContactPage from "./Contact";
@@ -58,7 +57,7 @@ class Portfolio extends Component {
   render() { 
     return ( 
       <>
-        <img src='/srcfiles/Asset 1.png' alt="Logo" />
+        <img src='../public/Asset 1.png' alt="Logo" />
         <Navbar onNavClick={this.handleNavClick} />
         {this.renderPage()}
       </>
