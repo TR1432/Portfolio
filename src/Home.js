@@ -1,7 +1,6 @@
 import React from "react";
 
-
-const HomePage  = ({ skillList = [], aspiringList = [], contactInfoList = [] }) => {
+const HomePage  = (props) => {
     const skillList = props.skillList;
     const aspiringList = props.aspiringList;
     const contactInfoList = props.contactInfoList;

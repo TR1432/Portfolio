@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "./navbar";
 import HomePage from "./Home";
-import BlogPage from ".";
-import ProjectsPage from "./Projects";
-import ResumePage from "./Resume";
-import ContactPage from "./Contact";
-import NotFoundPage from "./NotFound";
+//import BlogPage from ".";
+//import ProjectsPage from "./Projects";
+//import ResumePage from "./Resume";
+//import ContactPage from "./Contact";
+//import NotFoundPage from "./NotFound";
 
 const skillList = [
   {
@@ -37,16 +37,16 @@ class Portfolio extends Component {
     switch(page) {
       case 'Home':
         return <HomePage skillList={skillList} aspiringList={aspiringList} contactInfoList={contactInfoList} />;
-      case 'Blog':
-        return <BlogPage />;
-      case 'Projects':
-        return <ProjectsPage />;
-      case 'Resume':
-        return <ResumePage />;
-      case 'Contact':
-        return <ContactPage />;
+//      case 'Blog':
+//        return <BlogPage />;
+//      case 'Projects':
+//        return <ProjectsPage />;
+//      case 'Resume':
+//        return <ResumePage />;
+//      case 'Contact':
+//        return <ContactPage />;
       default:
-        return <NotFoundPage />;
+        return <div />;
     }
   }
 
