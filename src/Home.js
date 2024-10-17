@@ -1,4 +1,5 @@
 import React from "react";
+import SkillCard from "./skill";
 
 const HomePage  = (props) => {
     const skillList = props.skillList;
