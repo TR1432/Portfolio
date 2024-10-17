@@ -10,9 +10,9 @@ const Navbar = ({ onNavClick }) => {
   ];
 
   return (
-    <nav>
+    <nav className='container row position-absolute top-0 start-50 translate-middle'>
       {navLinks.map(({ id, label, icon }) => (
-        <a key={id} id={id} className="nav-link" onClick={() => onNavClick(id)}>
+        <a key={id} id={id} className="col nav-link mt-auto mb-auto ms-2 me-2" onClick={() => onNavClick(id)}>
           <i className={icon} />
           {label}
         </a>

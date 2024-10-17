@@ -16,13 +16,26 @@ const skillList = [
   {
     name: 'FullStack Developer',
     tools: 'Next.js | Tailwind CSS | TypeScript | ECMAScript'
+  },{
+    name: 'Graphics Designer',
+    tools: 'Illustrator | Photoshop'
+  },{
+    name: 'Web Designer',
+    tools: 'Figma | Wordpress | AdobeXD'
   }
 ];
 
-const aspiringList = ['DevOps', 'Entrepreneur'];
+const aspiring = ['DevOps, Entrepreneur.'];
 const contactInfoList= [{
     link: 'https://x.com/payomi_kun',
-    icon: ''
+    icon: 'fa-brands fa-x-twitter',
+    title: 'My Twitter'
+},{
+  link: 'https://www.instagram.com/ayo.mikun_/',
+  icon: 'fa-brands fa-instagram',
+  title: 'My Instagram'
+},{
+
 }]
 
 class Portfolio extends Component {
@@ -37,7 +50,7 @@ class Portfolio extends Component {
     const { page } = this.state;
     switch(page) {
       case 'Home':
-        return <HomePage skillList={skillList} aspiringList={aspiringList} contactInfoList={contactInfoList} />;
+        return <HomePage skillList={skillList} aspiring={aspiring} contactInfoList={contactInfoList} />;
 //      case 'Blog':
 //        return <BlogPage />;
 //      case 'Projects':
@@ -57,11 +70,11 @@ class Portfolio extends Component {
 
   render() { 
     return ( 
-      <>
-        <img src={logo} alt="Logo" />
+      <div className="content-container">
+        <img src={logo} alt="Logo" className="logo" />
         <Navbar onNavClick={this.handleNavClick} />
         {this.renderPage()}
-      </>
+      </div>
     );
   }
 }

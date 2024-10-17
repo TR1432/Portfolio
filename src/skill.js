@@ -1,11 +1,11 @@
 function SkillCard(props) {
     return (
-        <div>
+        <div className="skillcard">
             <div>
                 {props.name}
             </div>
             <div>
-                {props.tools}
+                <span>{props.tools}</span>
             </div>
         </div>
     );

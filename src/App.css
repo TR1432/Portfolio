@@ -1,0 +1,11 @@
+:root {
+  --main-color: #7AFDD6;
+  --text-color: #FFFFFF; 
+  --background-color: #333333;
+  --light-text-color: #B3B3B3;
+  --faded-text-color: #666666;
+  --nav-background-color:#000000;
+  --main-font: 'Helvetica', sans-serif;
+  --code-font: 'Source Code Pro', monospace;
+}
+

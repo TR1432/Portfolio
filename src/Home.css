@@ -1,0 +1,109 @@
+:root {
+    --main-color: #7AFDD6;
+    --text-color: #FFFFFF; 
+    --background-color: #333333;
+    --light-text-color: #B3B3B3;
+    --faded-text-color: #666666;
+    --nav-background-color:#000000;
+    --main-font: 'Helvetica', sans-serif;
+    --code-font: 'Source Code Pro', monospace;
+    --card-font: 'Source Sans Pro', sans-serif;
+  }
+
+.skillcard{
+    border-color: var(--main-color) !important;
+    border-width: 4px;
+    font: var(--card-font);
+    padding: 0;
+    font-size: 32px;
+    width: 300px;
+    border-style: solid;
+    margin: 10px;
+    height: 156px;
+    cursor: pointer;
+}
+
+.skillcard span{
+    font-size: 11px;
+}
+
+.skillcard div{
+    line-height: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.homepage{
+    font-family: var(--main-font);
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto;
+    color: var(--text-color);
+    padding-top: 100px;
+}
+.code{
+    font-family: var(--code-font);
+    color: var(--faded-text-color);
+    font-size: 15px;
+}
+
+.intro{
+    font-size: 49px;
+    line-height: 58px;
+    font-weight: bold;
+}
+
+.open{
+    text-align: left;
+}
+
+.content{
+    text-align: center;
+}
+
+.close{
+    text-align: right;
+}
+
+.aspire{
+    font-size: 32px;
+    line-height: 50px;
+    color: var(--light-text-color);
+}
+
+.aspirelist{
+    font-size: 19px;
+    line-height: 50px;
+    color: var(--light-text-color);
+}
+
+.highlight{
+    background-color: var(--main-color) !important;
+    color: var(--nav-background-color) !important;
+}
+.contacts{
+    display: flex;
+}
+.contact-circle{
+    width: 34px !important;
+    height: 34px;
+    border-radius: 34px;
+    background-color: var(--light-text-color);
+    border-style: solid;
+    border-width: 0;
+    text-align: center;
+    color: var(--nav-background-color);
+    margin: 5px;
+}
+
+.contacticon{
+    margin-top: 9px;
+}
+
+a{
+    cursor: pointer;
+}
