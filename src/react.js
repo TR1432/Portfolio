@@ -58,7 +58,7 @@ class Portfolio extends Component {
   render() { 
     return ( 
       <>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src='/srcfiles/Asset 1.png' alt="Logo" />
         <Navbar onNavClick={this.handleNavClick} />
         {this.renderPage()}
       </>
