@@ -1,6 +1,6 @@
 function SkillCard(props) {
     return (
-        <div className="skillcard">
+        <div className="skillcard ">
             <div>
                 {props.name}
             </div>

@@ -35,7 +35,13 @@ const contactInfoList= [{
   icon: 'fa-brands fa-instagram',
   title: 'My Instagram'
 },{
-
+  link: 'https://www.linkedin.com/in/oluwapelumi-fadahunsi-3a6174294/',
+  icon: 'fa-brands fa-linkedin-in',
+  title: 'My LinkedIn'
+},{
+  link: 'mailto:ppfaddy@gmail.com',
+  icon: 'fa-regular fa-envelope',
+  title: 'My Gmail'
 }]
 
 class Portfolio extends Component {
@@ -72,7 +78,7 @@ class Portfolio extends Component {
     return ( 
       <div className="content-container">
         <img src={logo} alt="Logo" className="logo" />
-        <Navbar onNavClick={this.handleNavClick} />
+        <Navbar current_page={this.state.page} onNavClick={this.handleNavClick} />
         {this.renderPage()}
       </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({ onNavClick }) => {
+const Navbar = ({ onNavClick, current_page }) => {
   const navLinks = [
     { id: 'Home', label: 'Home', icon: 'home-icon' },
     { id: 'Project', label: 'Project', icon: 'project-icon' },
@@ -12,10 +12,17 @@ const Navbar = ({ onNavClick }) => {
   return (
     <nav className='container row position-absolute top-0 start-50 translate-middle'>
       {navLinks.map(({ id, label, icon }) => (
-        <a key={id} id={id} className="col nav-link mt-auto mb-auto ms-2 me-2" onClick={() => onNavClick(id)}>
-          <i className={icon} />
-          {label}
-        </a>
+        <div 
+        key={id} 
+        id={id} 
+        role="button" 
+        className={id === current_page ? "highlight col nav-link mt-auto mb-auto ms-2 me-2" : "col nav-link mt-auto mb-auto ms-2 me-2"} 
+        onClick={() => onNavClick(id)} 
+        tabIndex={0}
+      >
+        <i className={icon} />
+        {label}
+      </div>
       ))}
     </nav>
   );

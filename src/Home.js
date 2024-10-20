@@ -21,7 +21,7 @@ const HomePage  = (props) => {
                 <div className="content">Nigerian kid engraving his name on the internet</div>
                 <div className="close">&lt;/p&gt;</div>
             </div>
-            <div className="col-12 overflow-y-hidden overflow-x-auto d-flex flex-row ">
+            <div className="col-12 overflow-x-auto cardwrapper">
                 {skillList.map((skill, index) => (
                     <SkillCard key={index} name={skill.name} tools={skill.tools} />
                 ))}

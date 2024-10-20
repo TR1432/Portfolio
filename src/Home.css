@@ -8,6 +8,7 @@
     --main-font: 'Helvetica', sans-serif;
     --code-font: 'Source Code Pro', monospace;
     --card-font: 'Source Sans Pro', sans-serif;
+    --viewport-gutter: calc(100 * (100vw / 1080));
   }
 
 .skillcard{
@@ -18,9 +19,12 @@
     font-size: 32px;
     width: 300px;
     border-style: solid;
-    margin: 10px;
+    margin-top: 10px;
     height: 156px;
     cursor: pointer;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: 1/4;
 }
 
 .skillcard span{
@@ -39,11 +43,12 @@ span{
 
 .homepage{
     font-family: var(--main-font);
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: auto;
+    padding-left: var(--viewport-gutter);
+    padding-right: var(--viewport-gutter);
     color: var(--text-color);
-    padding-top: 100px;
+    display: flex !important;
+    align-content: center;
+    height: 100vh;
 }
 .code{
     font-family: var(--code-font);
@@ -106,4 +111,22 @@ span{
 
 a{
     cursor: pointer;
+}
+
+.cardwrapper{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: auto, auto;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}::-webkit-scrollbar{
+    
+}::-webkit-scrollbar-track{
+
+}
+
+
+.nav-link{
+    border-radius: 5px;
 }

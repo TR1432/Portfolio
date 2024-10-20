@@ -7,7 +7,12 @@
   --nav-background-color:#000000;
   --main-font: 'Helvetica', sans-serif;
   --code-font: 'Source Code Pro', monospace;
+  --logo-gutter: calc(20 * (100vw / 1080));
+  --logo-height: calc(52 * (100vw / 1080));
+  --logo-width: calc(33 * (100vw / 1080));
 }
+
+
 
 body{
   margin: 0 !important;
@@ -23,17 +28,18 @@ code {
 
 .logo {
   position: absolute;
-  width: 33px;
-  height: 52px;
-  margin: 20px;
+  width: var(--logo-width);
+  height: var(--logo-height);
+  margin: var(--logo-gutter);
 }
 
 nav{
   margin-top: 3% !important;
-  width: 30% !important;
+  width: 32% !important;
   background-color: var(--nav-background-color);
   height: 30px;
   border-radius: 10px;
   color: var(--light-text-color);
   position: fixed !important;
+  text-align: center;
 }
