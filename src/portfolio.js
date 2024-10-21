@@ -57,8 +57,8 @@ class Portfolio extends Component {
     switch(page) {
       case 'Home':
         return <HomePage skillList={skillList} aspiring={aspiring} contactInfoList={contactInfoList} />;
-//      case 'Blog':
-//        return <BlogPage />;
+//      case 'About':
+//        return <AboutPage />;
 //      case 'Projects':
 //        return <ProjectsPage />;
 //      case 'Resume':

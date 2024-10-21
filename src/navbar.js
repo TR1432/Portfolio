@@ -3,8 +3,8 @@ import React from 'react';
 const Navbar = ({ onNavClick, current_page }) => {
   const navLinks = [
     { id: 'Home', label: 'Home', icon: 'home-icon' },
-    { id: 'Project', label: 'Project', icon: 'project-icon' },
-    { id: 'Blogs', label: 'Blogs', icon: 'blog-icon' },
+    { id: 'Projects', label: 'Projects', icon: 'projects-icon' },
+    { id: 'About', label: 'About', icon: 'about-icon' },
     { id: 'Resume', label: 'Resume', icon: 'resume-icon' },
     { id: 'Contact', label: 'Contact', icon: 'contact-icon' }
   ];
