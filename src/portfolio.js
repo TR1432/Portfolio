@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./navbar";
 import HomePage from "./Home";
 import logo from './logo.png'
-//import BlogPage from ".";
+import AboutPage from "./About";
 //import ProjectsPage from "./Projects";
 //import ResumePage from "./Resume";
 //import ContactPage from "./Contact";
@@ -57,8 +57,8 @@ class Portfolio extends Component {
     switch(page) {
       case 'Home':
         return <HomePage skillList={skillList} aspiring={aspiring} contactInfoList={contactInfoList} />;
-//      case 'About':
-//        return <AboutPage />;
+      case 'About':
+        return <AboutPage />;
 //      case 'Projects':
 //        return <ProjectsPage />;
 //      case 'Resume':

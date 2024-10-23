@@ -5,8 +5,7 @@ const Navbar = ({ onNavClick, current_page }) => {
     { id: 'Home', label: 'Home', icon: 'home-icon' },
     { id: 'Projects', label: 'Projects', icon: 'projects-icon' },
     { id: 'About', label: 'About', icon: 'about-icon' },
-    { id: 'Resume', label: 'Resume', icon: 'resume-icon' },
-    { id: 'Contact', label: 'Contact', icon: 'contact-icon' }
+    { id: 'Resume', label: 'Resume', icon: 'resume-icon' }
   ];
 
   return (
