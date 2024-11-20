@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Navbar from "./navbar";
-import HomePage from "./Home";
-import logo from './logo.png'
-import AboutPage from "./About";
+import Navbar from "../Nav/navbar";
+import HomePage from "../Home/Home";
+// import logo from '../logo.png'
+import AboutPage from "../about/About";
 //import ProjectsPage from "./Projects";
 //import ResumePage from "./Resume";
 //import ContactPage from "./Contact";
 //import NotFoundPage from "./NotFound";
-import Welcome from "./welcome/Welcome";
+import Welcome from "../welcome/Welcome";
 
 const skillList = [
   {
@@ -24,7 +24,12 @@ const skillList = [
 ];
 
 const aspiring = ['DevOps Engineer, Entrepreneur.'];
-const contactInfoList= [{
+const contactInfoList= [
+  {
+    link: "https://github.com/TR1432",
+    icon: "fa-brands fa-github",
+    title: "My GitHub"
+},{
     link: 'https://x.com/payomi_kun',
     icon: 'fa-brands fa-x-twitter',
     title: 'My Twitter'
@@ -46,8 +51,10 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      page: 'Home'
+      page: 'Home',
+      render: false
     };
+    this.start = this.start.bind(this)
   }
 
   renderPage() {
@@ -72,13 +79,27 @@ class Portfolio extends Component {
     this.setState({ page: navId });
   }
 
+  start() {
+    setTimeout(() => {
+      this.setState({render: true})
+    }, 3300);
+  }
+
+  componentDidMount(){
+    this.start()
+  }
+  
   render() { 
     return ( 
       <div className="content-container">
         <Welcome/>
-        <img src={logo} alt="Logo" className="logo" />
-        <Navbar current_page={this.state.page} onNavClick={this.handleNavClick} />
-        {this.renderPage()}
+        {!this.state.render ? null : (
+         <>
+             <img src="/logo512.png" alt="Logo" className="logo" />
+             <Navbar current_page={this.state.page} onNavClick={this.handleNavClick} />
+             {this.renderPage()}
+         </>
+      )}
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoCard from './Infocard'
+import InfoCard from '../infocard/Infocard'
 import './about.css'
 
 const AboutPage = () => {
