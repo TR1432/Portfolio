@@ -7,25 +7,23 @@ import AboutPage from "./About";
 //import ResumePage from "./Resume";
 //import ContactPage from "./Contact";
 //import NotFoundPage from "./NotFound";
+import Welcome from "./welcome/Welcome";
 
 const skillList = [
   {
     name: 'Frontend Developer',
-    tools: 'React | Bootstrap | Javascript | HTML & CSS'
+    tools: 'React | Next.js | Framer | Javascript | Tailwind'
+  },{
+    name: 'Backend Developer',
+    tools: 'Python | Nodejs | TypeScript | FastApi'
   },
   {
-    name: 'FullStack Developer',
-    tools: 'Next.js | Tailwind CSS | TypeScript | ECMAScript'
-  },{
-    name: 'Graphics Designer',
-    tools: 'Illustrator | Photoshop'
-  },{
     name: 'Web Designer',
     tools: 'Figma | Wordpress | AdobeXD'
   }
 ];
 
-const aspiring = ['DevOps, Entrepreneur.'];
+const aspiring = ['DevOps Engineer, Entrepreneur.'];
 const contactInfoList= [{
     link: 'https://x.com/payomi_kun',
     icon: 'fa-brands fa-x-twitter',
@@ -77,6 +75,7 @@ class Portfolio extends Component {
   render() { 
     return ( 
       <div className="content-container">
+        <Welcome/>
         <img src={logo} alt="Logo" className="logo" />
         <Navbar current_page={this.state.page} onNavClick={this.handleNavClick} />
         {this.renderPage()}

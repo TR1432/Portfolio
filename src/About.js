@@ -24,7 +24,7 @@ const AboutPage = () => {
         list: [
             {name: 'Fav. Books', value: 'No Excuses | 48 Laws of Power'},
             {name: 'Fav. Writers', value: 'Robert Greene | Brian Tracy'},
-            {name: 'Disliked', value: "Fantasy | Sci fi"},
+            {name: 'Genre', value: "Self-help | Philosophy"},
             {name: 'Honourable Mentions', value:'Atomic Habits | Psychology of Stupidity'}
         ]
     }]
