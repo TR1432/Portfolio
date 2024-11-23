@@ -25,6 +25,7 @@
     display: grid;
     grid-template-rows: subgrid;
     grid-row: 1/4;
+    backface-visibility: hidden;
 }
 
 .skillcard span{
@@ -117,7 +118,8 @@ a{
     gap: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
+    overflow: visible !important;
+    overflow-x: visible !important;
 }
 .cardwrapper::-webkit-scrollbar{
     border-radius: 10px;
@@ -198,3 +200,7 @@ a{
         display: none;
     }
 }
+
+@media (max-width: 480px) {
+
+  }

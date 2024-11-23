@@ -31,8 +31,8 @@ const AboutPage = () => {
     return (
         <main>
             <div className='cardwrapper'>
-              {Info.map((info) => (
-                  <InfoCard info={info} />
+              {Info.map((info, index) => (
+                  <InfoCard number={index} info={info} />
              ))} 
            </div>
         </main>

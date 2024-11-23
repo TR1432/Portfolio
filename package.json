@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TR1432.github.io/Portfolio",
+  "homepage": "https://TR1432.github.io",
   "dependencies": {
     "@fontsource/source-code-pro": "^5.1.0",
     "@fontsource/source-sans-pro": "^5.1.0",

@@ -41,6 +41,7 @@ nav{
   width: 50% !important;
   background-color: var(--nav-background-color);
   height: 3rem;
+  min-width: max-content;
   border-radius: 10px;
   color: var(--light-text-color);
   position: fixed !important;
@@ -51,6 +52,8 @@ nav{
 .nav-link{
   border-radius: 5px;
   transition: .7s !important;
+  height: 80%;
+  padding-block-start: 3px !important;
 }
 .highlight{
   background-color: var(--main-color) !important;

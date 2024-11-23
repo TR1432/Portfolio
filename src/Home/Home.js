@@ -80,7 +80,7 @@ const HomePage  = (props) => {
                     <div className="cursor-code"/>
                 </div>
             </div>
-            <div className="col-12 overflow-x-auto cardwrapper">
+            <div className="col-12 cardwrapper">
                 {skillList.map((skill, index) => (
                     <SkillCard key={index} name={skill.name} tools={skill.tools} />
                 ))}

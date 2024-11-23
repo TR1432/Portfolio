@@ -95,7 +95,7 @@ class Portfolio extends Component {
         <Welcome/>
         {!this.state.render ? null : (
          <>
-             <img src="/logo512.png" alt="Logo" className="logo" />
+             <img src="public/logo.png" alt="Logo" className="logo" />
              <Navbar current_page={this.state.page} onNavClick={this.handleNavClick} />
              {this.renderPage()}
          </>
